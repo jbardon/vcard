@@ -1,106 +1,69 @@
 <style type="text/css">
-img.photo {
-    width: 80px;
+* {
+	margin: 0px;
+	padding: 0px;
 }
-
-img.logo {
-    width: 120px;
-    position: absolute;
-    top: 500px;
-    display: none;
-}
-
-div.vcard > table {
-	display: inline-block;
-	margin-left: 20px;
-	margin-top: -35px;
-}
-
-span.fn {
-    font-weight: bold;
-    font-family: Georgia;
-}
-
-.email {
-	display: block;
-}
-
-img {
-	margin-right: 5px;
-}
-
-tr > td:nth-child(1){
-	padding-right: 25px;
-}
-
-#links {
-	position: relative;
-	padding-top: 10px;
-	font-size: 25px;
-}
-
-#download {
-	position: absolute;
-	top: 4px;
-	right: -18px;
-}
-
-#download a {
-	color: black;
-	font-size: 12px;
-}
-
 </style>
+
 <hr>
-<div id="hcard-Jérémy-Bardon" class="vcard">
-
-	<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAlRAAAAJDcxN2MyNjhiLTBiNWUtNDk1ZC1iMTdlLTg1OTZhMDdjNGQzZQ.jpg" alt="Photo" class="photo"/>
-
+<div id="hcard-Jérémy-Bardon" class="vcard" style="margin-top: 10px;">
 	<table>
 		<tr>
-			<td>
-				<span class="fn">Jérémy BARDON</span>
-				<div class="title">Ingénieur logiciel</div> 			
+			<td rowspan="2">
+				<img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAlRAAAAJDcxN2MyNjhiLTBiNWUtNDk1ZC1iMTdlLTg1OTZhMDdjNGQzZQ.jpg" alt="Photo" class="photo" style="width: 80px; margin-right: 20px;"/>
 			</td>
-
-			<td>		
-				<a class="email" href="mailto:bardonjeremy1@gmail.com"><img src="https://github.com/jbardon/vcard/raw/master/mail/email.png"/>bardonjeremy1@gmail.com</a>
-				<a class="tel" href="tel:+33695052487">
-					<span class="type"><img src="https://github.com/jbardon/vcard/raw/master/mail/tel.png"/></span>
-					<span class="value">+33</span> 
-					<span class="value">6</span> 
-					<span class="value">95</span> 
-					<span class="value">05</span> 
-					<span class="value">24</span> 
-					<span class="value">87</span>
-				</a>		
+			<td style="padding-right: 30px;">
+				<div class="fn" style="font-weight: bold; font-family: Georgia;">Jérémy BARDON</div>
+				<div class="title">Ingénieur logiciel</div> 				
 			</td>
+			<td colspan="2">
+				<div>
+					<a class="email" href="mailto:bardonjeremy1@gmail.com"><img src="https://github.com/jbardon/vcard/raw/master/mail/email.png" style="margin-right: 10px;"/>bardonjeremy1@gmail.com</a>
+				</div>
+				<div>
+					<a class="tel" href="tel:+33695052487">
+						<span class="type"><img src="https://github.com/jbardon/vcard/raw/master/mail/tel.png" style="margin-right: 10px;"/></span>
+						<span class="value">+33</span> 
+						<span class="value">6</span> 
+						<span class="value">95</span> 
+						<span class="value">05</span> 
+						<span class="value">24</span> 
+						<span class="value">87</span>
+					</a>
+				</div>				
+			</td>			
 		</tr>
-
 		<tr>
 			<td>
-				<div class="adr">					
+				<div class="adr" style="margin-top: 5px;">					
 					<span class="postal-code">44000</span>					
 					<span class="locality">Nantes</span><br>					
 					<span class="region">Pays de la Loire, </span>
 					<span class="country-name">France</span>
-				</div>
+				</div>				
 			</td>
-
-			<td>
-				<div id="links">
-					<a rel="me" class="url" href="skype:jbardon?call" style="color:#43bbe8;"><img src="https://github.com/jbardon/vcard/raw/master/mail/skype.png"/></a>
-					<a rel="me" class="url" href="https://github.com/jbardon" style="color:black;"><img src="https://github.com/jbardon/vcard/raw/master/mail/git.png"/></a>					
-					<a rel="me" class="url" href="https://fr.linkedin.com/in/jeremybardon" style="color:#0b6087;"><img src="https://github.com/jbardon/vcard/raw/master/mail/linkedin.png"/></a>	
-
-					<div id="download">
-						<a class="url" href="https://github.com/jbardon/vcard/raw/master/Bardon_Jeremy-vCard.vcf" download><img src="https://github.com/jbardon/vcard/raw/master/mail/vcard.png"/>Obtenir vCard</a><br>
-						<a class="url" href="https://github.com/jbardon/vcard/raw/master/Bardon_Jeremy-CV.pdf" download><img src="https://github.com/jbardon/vcard/raw/master/mail/cv.png" style="margin-right: 8px;"/>Télécharger Cv</a>	
-					</div>			
-				</div>
+			<td style="padding-top: 15px;">
+				<a rel="me" class="url" href="skype:jbardon?call" style="color:#43bbe8; display: inline-block; margin-right: 3px;">
+					<img src="https://github.com/jbardon/vcard/raw/master/mail/skype.png"/>
+				</a>
+				<a rel="me" class="url" href="https://github.com/jbardon" style="color:black; display: inline-block; margin-right: 3px;">
+					<img src="https://github.com/jbardon/vcard/raw/master/mail/git.png"/>
+				</a>					
+				<a rel="me" class="url" href="https://fr.linkedin.com/in/jeremybardon" style="color:#0b6087; display: inline-block;">
+					<img src="https://github.com/jbardon/vcard/raw/master/mail/linkedin.png"/>
+				</a>				
 			</td>
-		</tr>
+			<td style="padding-left: 30px; padding-top: 5px;">
+				<img src="https://github.com/jbardon/vcard/raw/master/mail/vcard.png"/>		
+				<a class="url" href="https://github.com/jbardon/vcard/raw/master/Bardon_Jeremy-vCard.vcf" style="color:black; margin-right: 5px;" download>
+					Obtenir vCard
+				</a><br>
 
-		<img src="https://qrcgcustomers.s3.amazonaws.com/account1184030/qrcodes/2452574.png" alt="Logo" class="logo"/>	
+				<img src="https://github.com/jbardon/vcard/raw/master/mail/cv.png"/>		
+				<a class="url" href="https://github.com/jbardon/vcard/raw/master/Bardon_Jeremy-CV.pdf" style="color:black; margin-right: 5px;" download>
+					Télécharger Cv
+				</a>				
+			</td>
+		</tr>		
 	</table>
 </div>
